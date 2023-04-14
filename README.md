@@ -29,7 +29,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 
-<a href="https://heisemmaco.github.io/profile-card-component-main/">Live Site</a>
+<a href="https://heisemmaco.github.io/single-price-grid-component-master/">Live Site</a>
 
 ### Built with
 
