@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+/* ### Primary */
+
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+
+/* ### Neutral */
+
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    /* line-height: 1.5; */
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--Light-Gray);
+    font-family: 'Karla', sans-serif;
+
+/*centering my main*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*
+    6. Remove built-in form typography styles
+  */
+ button {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3 {
+    overflow-wrap: break-word;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+/* the top card style*/
+  .firstcard {
+    background-color: white;
+    color: var(--Grayish-Blue);
+    padding: 25px;
+  }
+  .firstcard h2 {
+    font-size: 1.8rem;
+    color: var(--Cyan);
+  }
+
+  .firstcard b {
+    color: var(--Bright-Yellow);
+    font-size: larger;
+  }
+
+  /*the second card style*/
+  .secondcard {
+    background-color: var(--Cyan);
+    color: aliceblue;
+    max-height: 280px;
+    max-width: 100%;
+    /* padding-bottom: 25px; */
+  }
+  .secondcard h3 {
+    font-size: 1.3rem;
+  }
+  .flex {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .the_price {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .describtion {
+    color: var(--Light-Gray);
+  }
+
+  /*the third card style*/
+  .thirdcard {
+    background-color: rgb(83, 199, 199);
+    color: var(--Light-Gray);
+    max-height: 280px;
+    max-width: 1000%;
+  }
+  .thirdcard h3 {
+    font-size: 1.3rem;
+    color: aliceblue;
+  }
+
+  .text_wrap {
+    line-height: 24px;
+    /* padding-bottom: 10px; */
+  } 
+
+  main {
+    width: 375px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* margin: 7vh auto 0; */
+  }
+
+  button {
+    background-color: var(--Bright-Yellow);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--Light-Gray);
+    font-weight: 600;
+    box-shadow: rgba(128, 128, 128, 0.452) 5px 4px 5px;
+  }
+
+  button:hover {
+    transform: scale(105%, 105%);
+    cursor: pointer;
+  }
+
+@media screen and (min-width: 650px) {
+  .wrapcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  main {
+    width: 575px;
+  }
+}
+ 
